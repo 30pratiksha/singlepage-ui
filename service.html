@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #111;
+    color: #fff;
+}
+.services{
+    padding: 100px 0;
+    font-family: 'Poppins', sans-serif;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 45px;
+    margin: auto;
+}
+.max-width h1{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    /* font-family: sans-serif; */
+}
+.max-width h1::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 170px;
+    background: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.card{
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    user-select: none;
+    width: calc(26% - 20px);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.card:hover{
+    background: #f8b116;
+}
+.box{
+    transition: all 0.3s ease;
+}
+.card:hover .box{
+    transform: scale(1.05);
+}
+.box i{
+    font-size: 50px;
+    color: #fc9b1e;
+    transition: color 0.3s ease;
+}
+.card:hover .box i{
+    color: #fff;
+}
+.box h3{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px;
+}
+@media screen and (max-width: 1190px) {
+    .max-width{
+        padding: 0 25px;
+    }
+    .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .card{
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+    <div class="services">
+        <div class="max-width">
+            <h1>Our Services</h1>
+            <div class="content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fa fa-paint-brush"></i>
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus incidunt labore debitis ea repudiandae numquam.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fa fa-code"></i>
+                        <h3>Grapics Design</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus incidunt labore debitis ea repudiandae numquam.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fa fa-mobile"></i>
+                        <h3>App Development</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus incidunt labore debitis ea repudiandae numquam.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fa fa-line-chart"></i>
+                        <h3>Advertising</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus incidunt labore debitis ea repudiandae numquam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
